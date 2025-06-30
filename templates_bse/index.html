@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Predictor</title>
+</head>
+<body>
+    <h2>Enter Customer Info</h2>
+    <form method="POST" action="/predict">
+        <input type="text" name="Age" placeholder="Age"><br>
+        <input type="text" name="Experience" placeholder="Experience"><br>
+        <input type="text" name="Income" placeholder="Income"><br>
+        <input type="text" name="Family" placeholder="Family"><br>
+        <input type="text" name="CCAvg" placeholder="CCAvg"><br>
+        <input type="text" name="Education" placeholder="Education (1/2/3)"><br>
+        <input type="text" name="Mortgage" placeholder="Mortgage"><br>
+        <input type="text" name="Securities Account" placeholder="Securities Account (0/1)"><br>
+        <input type="text" name="CD Account" placeholder="CD Account (0/1)"><br>
+        <input type="text" name="Online" placeholder="Online (0/1)"><br>
+        <input type="text" name="CreditCard" placeholder="CreditCard (0/1)"><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
