@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Minfy.CHIRANJIBISILLA/Desktop/Risk%20Classification%20System/Building%20model/mlruns/588862836987579459
+creation_time: 1751362134547
+experiment_id: '588862836987579459'
+last_update_time: 1751362134547
+lifecycle_stage: active
+name: Loan_Default_Classification_GridSearch
